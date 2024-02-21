@@ -1,0 +1,9 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.div-style {
+  display: inline;
+  grid-template-columns: 30% 70%;
+}
