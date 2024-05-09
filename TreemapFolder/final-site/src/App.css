@@ -1,9 +1,25 @@
+
 .App {
   font-family: sans-serif;
   text-align: center;
 }
 
-.div-style {
-  display: inline;
-  grid-template-columns: 30% 70%;
+.div-style{
+  
+  list-style-type: none;
+  text-align: center;
 }
+
+h1{
+  text-align: center;
+}
+
+.update-style{
+  height: 35px;
+  width: 100;
+  background-color: blue;
+  color:black;
+  margin-left: 50%;
+  
+}
+

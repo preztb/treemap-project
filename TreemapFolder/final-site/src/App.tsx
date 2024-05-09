@@ -1,21 +1,39 @@
 import "./App.css";
 import React from "react";
-import JsonDataDisplay from "./table";
-import Button from "./pages/button";
+import { Routes, Link, useLocation} from "react-router-dom";
+import { Route } from "react-router-dom";
+import Home from "./home";
+import Page2 from "./page2";
+
+
+
+
+
+
+
 
 
 
 const App = () => {
+
+
   return (
-    <div className="App">
-            <JsonDataDisplay />
-            <Button/>
+    <>
+    
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
+    </>
+    
+      
+            
+            
 
             
             
             
-    </div>
-  )
+    
+  );
 }
 
 export default App

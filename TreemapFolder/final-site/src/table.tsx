@@ -1,10 +1,11 @@
 import React from 'react';
 import TreeMap from 'react-d3-treemap';
 import 'react-d3-treemap/dist/react.d3.treemap.css';
-import jsonData from './assets/technology_top10.json';
+import jsonData from './flask-server/content/technology_top10.json';
+import './App.css'
 
 interface TreeMapInputData {
-  name: string;
+  name?: string;
   value?: number;
   children?: TreeMapInputData[];
 }
@@ -14,7 +15,6 @@ export default class App extends React.Component<{}, { data: TreeMapInputData }>
     super(props);
     this.state = {
       data: {
-        name: 'Technology',
         children: this.parseData(jsonData),
       },
     };
